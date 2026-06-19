@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常对照 · mk体育</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafaf9;
+            color: #1e1e1e;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            padding: 2rem 1.2rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+            padding-top: 1.2rem;
+        }
+
+        /* 很克制的留白 */
+        h1, h2, h3, p, ul, .note-box, .closing-block {
+            margin-bottom: 1.8rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 350;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 0.4rem;
+            color: #111;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #6b6b6b;
+            border-left: 2px solid #d4d4d4;
+            padding-left: 1rem;
+            margin-bottom: 2.5rem;
+            font-weight: 380;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 390;
+            margin-bottom: 0.6rem;
+            color: #2a2a2a;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #2c2c2c;
+        }
+
+        .intro-quote {
+            font-size: 1.15rem;
+            font-weight: 350;
+            line-height: 1.8;
+            color: #222;
+            margin-bottom: 2rem;
+            padding: 0.3rem 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+
+        .feature-list li {
+            padding: 1rem 0 1rem 1.8rem;
+            border-bottom: 1px solid #efefef;
+            position: relative;
+            font-size: 0.98rem;
+            color: #2c2c2c;
+        }
+
+        .feature-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.2rem;
+            color: #8f8f8f;
+            font-weight: 700;
+            font-size: 1.5rem;
+            top: 0.8rem;
+        }
+
+        .feature-list li strong {
+            font-weight: 470;
+            color: #1f1f1f;
+        }
+
+        .note-box {
+            background: #f2f2f0;
+            border-radius: 0;
+            padding: 1.4rem 1.4rem 1.4rem 1.8rem;
+            font-size: 0.95rem;
+            color: #2e2e2e;
+            border-left: 3px solid #c4c4c4;
+            margin: 2rem 0;
+        }
+
+        .note-box p {
+            margin-bottom: 0.4rem;
+        }
+
+        .faq-mini {
+            background: transparent;
+            border: none;
+            padding: 0.3rem 0;
+            margin-bottom: 2.3rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.4rem;
+        }
+
+        .faq-q {
+            font-weight: 460;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+            color: #151515;
+        }
+
+        .faq-a {
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            padding-left: 0.2rem;
+        }
+
+        .closing-block {
+            margin-top: 2.8rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.95rem;
+            color: #505050;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .closing-block a {
+            color: #2e2e2e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b0b0b0;
+            transition: text-decoration-color 0.2s;
+        }
+
+        .closing-block a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #7c7c7c;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ececec;
+            text-align: left;
+        }
+
+        a {
+            color: #1e1e1e;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .subhead {
+                font-size: 0.9rem;
+                padding-left: 0.8rem;
+            }
+            .feature-list li {
+                padding-left: 1.6rem;
+            }
+        }
+
+        @media (min-width: 800px) {
+            body {
+                padding: 3rem 2rem;
+            }
+        }
+
+        /* 视觉点缀 */
+        .small-meta {
+            display: block;
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            margin-top: 0.2rem;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>对照与延伸</h1>
+        <div class="subhead">少数时刻，只是想在安静中翻一翻、对一对</div>
+
+        <p class="intro-quote">
+            有时我们打开某个页面并没有明确目的——只是习惯性地检索一个数据，或追溯某条线索的源头。
+            在这类平静的日常里，信息本身比速度重要，可靠比花哨更让人安心。
+        </p>
+
+        <h2>为什么总回到这里</h2>
+        <p>
+            很长一段时间里，我发现自己会反复打开同一个站点：不是因为它设计多惊艳，而是因为它恰好处于“可查、可读、可对照”的位置。
+            从赛程到统计，从列表到注解，它提供的不只是答案，更是一套可以顺着看下去的脉络。像是心里记得的一个坐标，不需要导航也会走过去。
+        </p>
+        <p>
+            这种体验，大概就是我对 <a href="https://site-main-mk.com">mk体育</a> 的印象——不是动态推送的河流，而是一间资料室，安静、整齐，可以随时进去翻两页。
+        </p>
+
+        <h2>一些反复出现的场景</h2>
+        <ul class="feature-list">
+            <li><strong>查对数据</strong> —— 想确认某场比赛的比分或时间线，打开页面直接看，没有弹窗干扰，信息排列清晰，一眼就能定位到需要的行。</li>
+            <li><strong>横向比较</strong> —— 两支队伍近五场走势、主客场差异、相同对手下的表现；这类对比在 mk体育 的列表式布局里特别顺手，不用来回切换标签。</li>
+            <li><strong>延伸阅读</strong> —— 从一条纪录出发，顺着相关链接翻到另一项赛事或历史赛季。页面之间的跳转逻辑很轻，不会打断阅读节奏。</li>
+            <li><strong>安静收藏</strong> —— 不需要注册或关注，把网址留在书签里就好。每次打开都是同样的结构，没有突然改版的不适感。</li>
+        </ul>
+
+        <div class="note-box">
+            <p>📎 一个使用习惯</p>
+            <p>我通常会在浏览器开一个固定标签页，把 <a href="https://site-main-mk.com">mk体育</a> 放在书签栏第二的位置。每周会点开三四次，多数时候只是快速扫一眼赛程变动，偶尔会顺着某条链接读很久。页面没有推送提醒，也不记录浏览历史——这反而让人更放松，像是在翻一份属于自己的参考手册。</p>
+        </div>
+
+        <h2>你可能也会注意到</h2>
+        <div class="faq-mini">
+            <div class="faq-item">
+                <div class="faq-q">—— 信息密度刚好，不堆砌</div>
+                <div class="faq-a">每一个页面展示的内容数量经过取舍，不会让眼睛疲劳。列表与详情之间切换很自然，适合碎片时间或专注时段。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">—— 没有多余的装饰</div>
+                <div class="faq-a">界面风格偏文字优先，配色克制，不强调品牌色或动画。这种设计反而让内容本身更突出，阅读时干扰最少。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">—— 更新节奏稳定</div>
+                <div class="faq-a">数据维护频率可靠，很少遇到滞后或缺失。对于习惯对照旧记录的人来说，这种稳定本身就是一种信任。</div>
+            </div>
+        </div>
+
+        <div class="closing-block">
+            <span>回到日常索引</span>
+            <span><a href="https://site-main-mk.com">mk体育</a> · 安静的参考面</span>
+        </div>
+
+        <div class="footer-note">
+            页面内容仅代表个人使用视角。无推广意图，亦不构成任何建议。
+        </div>
+    </div>
+</body>
+</html>
